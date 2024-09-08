@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ігрова платформа</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>GameHeaven</h1>
-        <img src="PS4.jpg" alt="GameHeaven">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHaven</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="main_container">
+        <section class="game-grid">
+          <div class="game-card">
+            <a href="/components/games/god-of-war/god-of-war-layout.html">
+              <img
+                src="imgs/covers/go_of_war_cover.png"
+                alt="God of War"
+                class="game-image"
+              />
+              <h2 class="game-title">God of War</h2>
+              <p class="game-rating">Рейтинг: 4.8/5</p>
+            </a>
+          </div>
+          <div class="game-card">
+            <a href="/components/games/fortnite/fortnite-layout.html">
+              <img
+                src="imgs/covers/fortnie_cover.png"
+                alt="Fortnite"
+                class="game-image"
+              />
+              <h2 class="game-title">Fortnite</h2>
+              <p class="game-rating">Рейтинг: 4/5</p>
+            </a>
+          </div>
+          <div class="game-card">
+            <a href="/components/games/zelda/zelda-layout.html">
+              <img
+                src="imgs/covers/zelda_cover.png"
+                alt="The Legend of Zelda"
+                class="game-image"
+              />
+              <h2 class="game-title">The Legend of Zelda</h2>
+              <p class="game-rating">Рейтинг: 4.4/5</p>
+            </a>
+          </div>
+          <div class="game-card">
+            <a href="/components/games/standoff/standoff-layout.html">
+              <img
+                src="imgs/covers/standoff_cover.png"
+                alt="Standoff 2"
+                class="game-image"
+              />
+              <h2 class="game-title">Standoff 2</h2>
+              <p class="game-rating">Рейтинг: 4.5/5</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
 
-        <nav>
-            <ul>
-                <li><a href="#">Магазін</a></li>
-                <li><a href="#">Все ігри</a></li>
-                <li><a href="#">Магазін</a></li>
-                <li><a href="#">Контакт</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="games-section">
-        <div class="game">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/aqZdSwWyy9JcQ66BxHDKrky6.jpg" alt="God of War">
-
-            <h2>God of War</h2>
-            <p>Ocena: 4.0/5</p>
-        </div>
-        <div class="game">
-            <img src="https://cdn1.epicgames.com/offer/fn/Blade_2560x1440_2560x1440-95718a8046a942675a0bc4d27560e2bb?h=270&quality=medium&resize=1&w=480" alt="Fortnite">
-            <h2>Fortnite</h2>
-            <p>Ocena: 4.3/5</p>
-        </div>
-        <div class="game">
-            <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" alt="The Legend of Zelda">
-            <h2>The Legend of Zelda</h2>
-            <p>Ocena: 4.4/5</p>
-        </div>
-        <div class="game">
-            <img src="https://play-lh.googleusercontent.com/0mJuxwS-XI21njoPFuBk2MIkhQF0dFH2sKQcSPOxJJMB72Je9hNnyhGgHhDcouRoihI" alt="Standoff 2">
-
-
-            <h2>Standoff 2</h2>
-            <p>Ocena: 4.5/5</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 GameHeaven. Всі права захищені.</p>
-        <p>Контакт: <a href="mailto:kontakt@gameheaven.com">kontakt@gameheaven.com</a></p>
-        <div class="social-icons">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/640px-Facebook_logo_%28square%29.png" alt="Facebook"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
-            <a href="#"><img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter"></a>
-        </div>
-    </footer>
-</body>
+    <script src="/js/load-components.js"></script>
+  </body>
 </html>

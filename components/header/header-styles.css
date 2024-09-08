@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 40px 12px 40px;
+  border-bottom: 1px solid #E5E8EB;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #1c170d;
+  margin-right: 36px;
+}
+
+.nav {
+  display: flex;
+  gap: 36px;
+}
+
+.nav-link {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #1c170d;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.profile-link {
+  margin-right: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f0e5;
+  border-radius: 12px;
+  padding: 10px;
+  width: 140px;
+  margin-right: 36px;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a1824a;
+  margin-left: 10px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+  .header-left {
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .site-title {
+    margin-right: 0;
+  }
+}

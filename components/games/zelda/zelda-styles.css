@@ -1,0 +1,304 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1c170d;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 16px;
+  gap: 32px;
+}
+
+@media (max-width: 1000px) {
+  .game-header {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.main-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+.game-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 16px 0;
+}
+
+.play-now-btn {
+  display: inline-block;
+  width: 400px;
+  height: 48px;
+  padding: 0 20px;
+  background-color: #009963;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+  margin-top: 16px;
+}
+
+.game-ratings {
+  display: flex;
+  max-width: 580px;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 32px;
+}
+
+.overall-rating {
+  flex: 1;
+}
+
+.rating-number {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.stars {
+  margin: 8px 0;
+}
+
+.stars img {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.reviews-count {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.detailed-ratings {
+  flex: 1;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.rating-row span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.rating-bar {
+  position: relative;
+  width: 340px;
+  height: 10px;
+  background-color: #e8decf;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.filled-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #009963;
+  border-radius: 5px;
+}
+
+.rating-row-percents {
+  color: #a1824a;
+}
+
+.how-to-play {
+  padding: 20px 16px;
+}
+
+.how-to-play h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.how-to-play p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 16px 0;
+}
+
+.game-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 8px 0;
+  text-align: left;
+}
+
+.feature p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #a1824a;
+  text-align: left;
+}
+
+.gallery {
+  padding: 20px 16px;
+}
+
+.gallery h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 223px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 16px;
+}
+
+.reviews h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.review-header {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.review-information {
+  flex: 1;
+}
+
+.review-information h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.review-date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #a1824a;
+  margin: 0;
+}
+
+.review-information .stars img {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.review-information p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.review-likes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #a1824a;
+}
+
+.review-likes img {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  cursor: pointer;
+}

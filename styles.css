@@ -1,0 +1,88 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1c170d;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main_container {
+  max-width: 960px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-card {
+  text-align: left;
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.game-image {
+  width: 100%;
+  max-width: 223px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 10px;
+  color: #1c170d;
+}
+
+.game-rating {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #a1824a;
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .game-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
